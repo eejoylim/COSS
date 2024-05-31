@@ -17,6 +17,10 @@ CERT = 1 - \frac{6 \Sigma d_i^2}{n(n^2 - 1)} = 1 - \rho
 3. **Stability Gap** represents the certainty of label distribution of a sample. It is implemented using Bayes' Theorem. The higher the certainty of a label distribution, the lower the Stability Gap. Stability Gap is defined as:
 ```math
 Stability Index = abs\left(\frac{B(x'+2, y'+1)}{B(x'+1, y'+1)} - \frac{B(x+2, y+1)}{B(x+1, y+1)}\right)
+```
+```math
 Threshold = (1 - x) e^{-bx}
+```
+```math
 Stability Gap = max\left((Stability Index - Threshold), 0\right)
 ```
